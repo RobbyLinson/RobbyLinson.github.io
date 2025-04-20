@@ -1,0 +1,49 @@
+:root {
+  --color-primary: #670081;
+  --color-secondary: #e0b0ff;
+  --color-bg: #000000;
+  --color-surface: #1a1a1a;
+  --color-text: #bebfc5;
+  --color-muted: #bebfc5;
+
+  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Inter', sans-serif;
+  --font-size-base: 16px;
+  --font-size-sm: 14px;
+  --font-size-lg: 20px;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --border-radius: 8px;
+
+  --max-width: 800px;
+  --shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  --transition: 0.2s ease-in-out;
+
+  --unit: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing-md);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+@media (max-width: 600px) {
+  .widget {
+    width: 100% !important;
+  }
+}
