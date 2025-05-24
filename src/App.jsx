@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
 import Widget from './components/Widget';
+import TechStack from './components/TechStack';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Robby from './assets/Robby.png';
 import TCD from './assets/TCD-Logo.png';
@@ -58,14 +59,14 @@ function App() {
               I have experience in Data Science, Research and Software
               Development.
             </li>
-            <li>I will complete an M.Sc in Computer Science in August 2026.</li>
+            <li>I will complete an M.Sc in Computer Science in May 2026.</li>
           </ul>
         </Widget>
 
         {/* Profile Picture */}
         <Widget
-          widthUnits={0.5}
-          heightUnits={1.5}
+          widthUnits={0.3}
+          heightUnits={1}
           row={2}
           col={1}
           className="profile-widget"
@@ -75,10 +76,10 @@ function App() {
 
         {/* Education */}
         <Widget
-          widthUnits={0.5}
+          widthUnits={0.3}
           heightUnits={1}
           row={2}
-          col={7}
+          col={5}
           className="education-widget"
         >
           <h2>Education</h2>
@@ -94,12 +95,25 @@ function App() {
             <div className="edu-item">
               <span className="edu-label">Course:</span>
               <span className="edu-value">M.Sc. in Computer Science</span>
+              <span className="edu-value">B.A. in Computer Science</span>
             </div>
             <div className="edu-item">
               <span className="edu-label">Grade:</span>
               <span className="edu-value">First Class Honours</span>
             </div>
           </div>
+        </Widget>
+
+        {/* Coding Language Preferences */}
+        <Widget
+          widthUnits={0.4}
+          heightUnits={1}
+          row={2}
+          col={9}
+          className="coding-languages-widget"
+        >
+          <h2>Tech Stack</h2>
+          <TechStack />
         </Widget>
 
         {/* Projects */}
