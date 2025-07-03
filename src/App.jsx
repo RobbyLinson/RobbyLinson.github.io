@@ -104,9 +104,8 @@ function App() {
           </div>
         </Widget>
 
-        {/* Coding Language Preferences */}
         <Widget
-          widthUnits={0.4}
+          widthUnits={0.35}
           heightUnits={1}
           row={2}
           col={9}
@@ -117,9 +116,13 @@ function App() {
         </Widget>
 
         {/* Projects */}
-        <Widget
-          widthUnits={0.5}
-          heightUnits={1}
+        <Widget widthUnits={1} heightUnits={0.1} row={3} col={1}>
+          <h1>Projects</h1>
+        </Widget>
+
+        {/* <Widget
+          widthUnits={1}
+          heightUnits={0.1}
           row={3}
           col={7}
           className="projects-widget"
@@ -138,7 +141,7 @@ function App() {
               <p>Description of another impressive project you've worked on.</p>
             </div>
           </div>
-        </Widget>
+        </Widget> */}
       </div>
     </div>
   );
